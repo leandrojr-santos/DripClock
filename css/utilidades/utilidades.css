@@ -1,0 +1,46 @@
+/*Cores*/
+:root{
+  --cor-0: #ffffff;
+  --cor-1: #f7f7f7;
+  --cor-2: #EDEDED;
+  --cor-3: #DEDEDE;
+  --cor-4: #CCCCCC;
+  --cor-5: #B3B3B3;
+  --cor-6: #9C9C9C;
+  --cor-7: #707070;
+  --cor-8: #595959;
+  --cor-9: #404040;
+  --cor-10: #2E2E2E;
+  --cor-11: #111111;
+  --cor-12: #000000;
+  --cor-p1: #089FF4;
+  --cor-p2: #007BEC;
+  --cor-p3: #0952E0;
+  --cor-p4: #0028B6;
+  --cor-p5: #080342;
+}
+/*Componentes*/
+.botao{
+  font-family: "Mulish";
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--cor-p5);
+  display: block;
+  background: linear-gradient(180deg, #6bc9ff 0%, #378df0 100%);
+  padding: 15px 30px;
+  justify-self: start;
+  border-radius: 5px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+ transition: .2s;
+}
+
+.botao:hover{
+  background: linear-gradient(180deg, #2eb0fc 0%, #1e65ff 100%);
+  color: #f1fcff;
+}
+
+@media(max-width: 600px){
+  .botao{
+    padding: 12px 24px;
+  }
+}
