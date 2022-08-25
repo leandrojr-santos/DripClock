@@ -66,7 +66,6 @@
 
 /*Introdução*/
 
-
  .introducao{
  background-color: var(--cor-1);
  position: relative;
@@ -81,11 +80,11 @@
 }
 .introducao-container{
   display: grid;
-  max-width: 1200px;
+  max-width: 1400px;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   gap: 40px;
-  padding: 60px 20px 120px 20px;
+  padding: 60px 20px 60px 20px;
 }
 
 .introducao-desc{
@@ -94,7 +93,7 @@
   align-self: end;
 }
 
-.introducao-img{
+.introducao-img img{
   border-radius: 5px;
 }
 
@@ -143,4 +142,38 @@
   .introducao-desc p{
     font-size: 1rem;
   }
+}
+
+/*Relogios*/
+
+.relogios{
+  background-color: var(--cor-0);
+}
+
+.relogios-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 1200px;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 60px 20px 120px 20px;
+}
+
+.relogios-desc h1{
+  font-family: "Mulish", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.12;
+  max-width: 12ch;
+  margin-bottom: 40px;
+}
+
+.relogios-desc p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--cor-8);
+  margin-bottom: 32px;
 }
