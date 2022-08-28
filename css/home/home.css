@@ -103,7 +103,6 @@
   font-weight: 800;
   font-size: 4rem;
   line-height: 1.2;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
@@ -112,7 +111,6 @@
   font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
   max-width: 40ch;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 32px;
 }
 
@@ -130,7 +128,6 @@
     display: none;
   }
   .introducao-img{
-    max-width: 80%;
     grid-row: 1;
   }
 }
@@ -138,9 +135,6 @@
 @media (max-width: 600px){
   .introducao-desc h1{
     font-size: 3rem;
-  }
-  .introducao-desc p{
-    font-size: 1rem;
   }
 }
 
@@ -201,4 +195,40 @@
   line-height: 1.3;
   color: var(--cor-8);
   margin-bottom: 32px;
+}
+
+@media(max-width: 800px){
+  .relogios-container{
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+  .relogios-container::before{
+    display: none;
+  }
+  .relogios-container::after{
+    display: none;
+  }
+  .relogios-desc{
+    display: grid;
+    justify-self: end;
+  }
+  .relogios-desc h1{
+    justify-self: end;
+    text-align: right;
+    max-width: fit-content;
+  }
+  .relogios-desc p{
+    text-align: right;
+  }
+  .relogios-desc a{
+    justify-self: end;
+  }  
+  
+}
+
+@media (max-width: 600px){
+  .relogios-desc h1{
+    font-size: 3rem;
+    max-width: 12ch;
+  }
 }
