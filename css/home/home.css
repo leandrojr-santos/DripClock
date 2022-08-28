@@ -80,7 +80,7 @@
 }
 .introducao-container{
   display: grid;
-  max-width: 1400px;
+  max-width: 1200px;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   gap: 40px;
@@ -120,7 +120,7 @@
   .introducao-container{
     grid-template-columns: 1fr;
     padding: 40px 20px;
-    justify-content: center;
+
   }
   .introducao-desc{
     z-index: intial;
@@ -131,7 +131,7 @@
   }
   .introducao-img{
     max-width: 80%;
-    grid-row: 2;
+    grid-row: 1;
   }
 }
 
@@ -158,6 +158,28 @@
   gap: 40px;
   margin: 0 auto;
   padding: 60px 20px 120px 20px;
+  position: relative;
+}
+
+.relogios-container::before{
+  content: '';
+  width: 60px;
+  height: 32px;
+  background: url("../../img/decoradores/top-left.svg");
+  position: absolute;
+  top: 60px;
+  left: 640px;
+}
+
+.relogios-container::after{
+  content: '';
+  width: 60px;
+  height: 32px;
+  background: url("../../img/decoradores/bottom-right.png");
+  position: absolute;
+  top: 700px;
+  right: 0px;
+
 }
 
 .relogios-desc h1{
@@ -167,7 +189,10 @@
   line-height: 1.12;
   max-width: 12ch;
   margin-bottom: 40px;
+  position: relative;
 }
+
+
 
 .relogios-desc p{
   font-family: 'Raleway', sans-serif;

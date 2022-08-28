@@ -25,6 +25,7 @@
   font-size: 1rem;
   max-width: max-content;
   font-weight: 800;
+  text-transform: uppercase;
   color: var(--cor-p5);
   display: block;
   background: linear-gradient(180deg, #6bc9ff 0%, #378df0 100%);
