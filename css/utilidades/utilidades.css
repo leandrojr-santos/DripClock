@@ -27,13 +27,15 @@
   font-weight: 800;
   text-transform: uppercase;
   color: var(--cor-p5);
-  display: block;
+  display: inline-block;
   background: linear-gradient(180deg, #6bc9ff 0%, #378df0 100%);
-  padding: 15px 30px;
+  padding: 15px 24px;
   justify-self: start;
   border-radius: 5px;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
   transition: .2s;
+  max-width: max-content;
+  white-space: nowrap;
 }
 
 .botao:hover{
@@ -43,6 +45,12 @@
 
 @media(max-width: 600px){
   .botao{
-    padding: 12px 24px;
+    padding: 16px 24px;
+  }
+
+}
+@media(max-width: 450px){
+  .botao{
+    font-size: 1rem;
   }
 }
