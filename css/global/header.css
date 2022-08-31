@@ -1,0 +1,67 @@
+/*Header*/
+.header-bg{
+  background-color: var(--cor-2);
+}
+.header{
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--cor-9);
+}
+
+.header-menu{
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.header-menu a{
+  display: inline-block;
+  padding: 16px 8px;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+.header-menu a:hover{
+  color: var(--cor-p1);
+}
+
+@media (max-width: 900px){
+  .header{
+    flex-direction: column;
+  }
+  .header-menu{
+    gap: 20px;
+    justify-self: center;
+  }
+  .header-menu a{
+    padding: 12px 16px;
+    border-radius: 5px;
+    background-color: var(--cor-3);
+  }
+  .header-menu a:hover{
+    background-color: var(--cor-4);
+  }
+}
+
+@media (max-width: 600px){
+  .header img{
+    width: 120px;
+  }
+  .header-menu{
+    gap: 12px;
+  }
+  .header-menu a{
+    padding: 8px 12px;
+    font-size: 1rem
+  }
+}

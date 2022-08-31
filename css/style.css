@@ -1,8 +1,11 @@
 /*Global*/
 @import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
 
 /*Utilidades*/
 @import "./utilidades/utilidades.css";
 
 /*Home*/
 @import "./home/home.css";
+

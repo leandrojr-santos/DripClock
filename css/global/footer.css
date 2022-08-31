@@ -1,0 +1,175 @@
+/*footer*/
+
+.footer{
+  background-color: var(--cor-12);
+  padding: 60px 0px 60px 0px;
+  color: white;
+}
+
+.footer a{
+  display: inline-block;
+}
+
+.footer h2{
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--cor-1);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.footer h2::before{
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background: url("../../img/home/gota-icone.svg");
+  position: absolute;
+  left: -16px;
+}
+
+.footer h3{
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: var(--cor-3);
+  margin-bottom: 16px;
+}
+
+.footer p{
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--cor-6);
+  margin-bottom: 16px;
+  transition: .1s;
+}
+
+.footer p:hover{
+  color: var(--cor-0);
+}
+
+.footer ul{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--cor-6);
+  margin-bottom: 16px;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: 5fr 4fr 3fr;
+  padding: 0px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-garantia-lista li{
+  margin-bottom: 12px;
+  transition: .1s;
+}
+
+.footer-garantia-lista li:hover{
+  color: var(--cor-0);
+}
+
+.footer-informacoes ul{
+  display: grid;
+  gap: 20px;
+}
+
+.footer-informacoes ul li:hover{
+  color: var(--cor-0);
+}
+
+.footer-garantia-lista li:nth-child(3){
+  margin-bottom: 60px;
+}
+.footer-logo{
+  grid-column: 1/-1;
+  margin-bottom: 40px;
+}
+
+.footer-contato p:nth-child(5){
+  margin-bottom: 60px;
+}
+
+.footer-redes-lista{
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 800px){
+  .footer{
+    padding: 40px 20px;
+  }
+  .footer-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-logo{
+    margin-bottom: 20px;
+  }
+  .footer h2{
+    font-size: 1.25rem;
+  }
+  .footer p, .footer li{
+    padding: 5px;
+  }
+
+  .footer-contato p:nth-child(5){
+    margin-bottom: 32px;
+  }
+  .footer-contato-redes{
+    margin-top: 60px;
+  }
+  .footer-garantia-lista li:nth-child(3){
+    margin-bottom: 32px;
+  }
+  .footer-informacoes{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px){
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+  .footer-logo{
+    margin-bottom: 12px;
+  }
+  .footer-informacoes{
+    grid-column: 1/-1;
+    margin-top: 0px;
+  }
+  .footer-informacoes ul{
+    display: flex;
+    gap: 20px;
+  }
+  .footer-contato-redes{
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 450px){
+  .footer-informacoes ul{
+    display: flex;
+    gap: 20px;
+  }
+  .footer h2{
+    margin-bottom: 24px;
+  }
+  .footer-contato-redes{
+    margin-top: 24px;
+  }
+}
